@@ -1,0 +1,118 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600,400);
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 800px;
+  height: 800px;
+  margin-top: -400px;
+  margin-left: -400px;
+  color: #333;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.btn{
+  outline: none;
+  position: absolute;
+  top: 24px;
+  right: 110px;
+  padding: 8px 12px;
+  border: 2px solid #FF9AA2;
+  background-color: #FF9AA2;
+  border-radius: 3px;
+  transition: 0.4s ease-in;
+  color: #fff;
+  float: right;
+  cursor: pointer;
+}
+
+.btn:hover {
+  border: 2px solid #e6727b;
+  background-color: #e6727b;
+}
+.clear{
+  outline: none;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  padding: 8px 12px;
+  border: 2px solid #a7a7a7;
+  background-color: #a7a7a7;
+  border-radius: 3px;
+  transition: 0.4s ease-in;
+  color: #fff;
+  float: right;
+  cursor: pointer;
+}
+
+.clear:hover {
+  border: 2px solid #5d5c5c;
+  background-color: #5d5c5c
+}
+
+.input {
+  outline: none;
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  width: 570px;
+  padding: 8px 12px;
+  border: 2px solid #eee;
+  border-radius: 3px;
+  color: #333;
+}
+
+.close {
+  outline: none;
+  border: none;
+  background-color: #fff;
+}
+.close > .line {
+  background-color: #eee;
+	height: 4px;
+	width: 30px;
+	border-radius: 4px;
+}
+
+.close > .line1 {
+  transform: rotate(45deg);
+}
+
+.close > .line2 {
+  transform: rotate(135deg);
+  margin-top: -4px;
+}
+
+.tasks {
+  width: 750px;
+  margin: 80px auto;
+}
+.task {
+  position: relative;
+  display: block;
+  border-bottom: 1px solid #eee;
+}
+
+.tasks > .task:last-child {
+  display: block;
+  border-bottom: none;
+}
+
+.task > input, .task > p, .task > .close{
+  display: inline-block;
+}
+
+.task > .close {
+  cursor: pointer;
+  position: absolute;
+  right: 24px;
+  top: 35px;
+}
+
+.task > p {
+  font-size: 24px;
+}
